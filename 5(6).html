@@ -1,0 +1,16 @@
+<body>
+    <input type="text" id="t1">
+    <input type="submit" onclick="fun()">
+    <script>
+        function fun(){
+            pat=/^\w+@\w+(\.\w{2,3})+$/
+            u=document.getElementById('t1').value 
+            if(pat.test(u)){
+                alert("perfect"+u)
+            }
+            else{
+                alert('Enter proper value')
+            }
+        }
+    </script>
+</body>            

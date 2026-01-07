@@ -1,0 +1,17 @@
+<body>
+    <form  onsubmit="fun()">
+        <input type="text"  id="f1">
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+            var obj=document.getElementById("f1").value
+            if(obj==0){
+                alert("Enter something")
+            }
+            else{
+                alert(obj)
+            }
+        }
+    </script>
+</body>

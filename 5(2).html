@@ -1,0 +1,20 @@
+<!-- Access Form elements -->
+ <!-- Method-2 -->
+<body>
+    <form name="formd" onsubmit="fun()">
+        <input type="text" name="fname" id="f1">
+        <input type="text" name="lname" id="l1">
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <script>
+        function fun(){
+            // var obj=document.forms["formd"]["fname"].value
+            // var obj=document.formd.fname.value
+            var obj=document.getElementById("l1").value
+            alert("welcome"+obj)
+            var obj2=document.forms["formd"]
+            alert("length of this form is:"+obj2.length)
+        }
+    </script>
+</body>
